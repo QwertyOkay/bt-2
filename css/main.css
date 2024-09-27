@@ -1,4 +1,5 @@
 @import "./base.css";
+@import "./about.css";
 @import "./utils/variables.css";
 @import "./components/header.css";
 @import "./components/hero.css";
@@ -6,3 +7,4 @@
 @import "./components/news.css";
 @import "./components/footer.css";
 @import "./components/mobile-menu.css";
+@import "./components/modal.css";
