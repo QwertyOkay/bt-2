@@ -1,0 +1,8 @@
+@import "./base.css";
+@import "./utils/variables.css";
+@import "./components/header.css";
+@import "./components/hero.css";
+@import "./components/cards.css";
+@import "./components/news.css";
+@import "./components/footer.css";
+@import "./components/mobile-menu.css";

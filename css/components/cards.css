@@ -1,0 +1,115 @@
+.cards {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../../img/circle-360.png);
+    top: 59%;
+    left: -14%;
+    width: 100%;
+    height: 440px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transform: rotate(1deg);
+  }
+  @media (min-width: 1024px) {
+    &::after {
+      background-image: url(../../img/circle.png);
+      top: -49%;
+      left: 35%;
+      transform: rotate(89deg);
+      width: 440px;
+    }
+  }
+}
+.cards-list {
+  display: grid;
+  gap: 20px;
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.cards-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  border: 1px solid #46e055;
+  padding: 10px;
+  background: rgba(43, 43, 43, 0.5);
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(100px);
+    z-index: -1;
+  }
+}
+.cards-img {
+  margin-right: auto;
+  margin-left: auto;
+}
+.cards-wrapper {
+  display: flex;
+  gap: 10px;
+}
+.cards-title {
+  width: 100%;
+  max-width: 105px;
+  position: relative;
+  border-bottom: 1px solid #46e055;
+  padding: 0px 0px 2px 0px;
+
+  font-weight: 700;
+  font-size: 18px;
+}
+.cards-text {
+  width: 100%;
+  max-width: 445px;
+  font-weight: 400;
+  font-size: 14px;
+}
+.cards-btn {
+  display: block;
+  position: relative;
+  padding: 10px 0px;
+  border: none;
+  background-color: #46e055;
+
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #2a2a2a;
+}
+
+.option-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #46e055;
+}
+.option-item {
+  position: relative;
+  padding-left: 17px;
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 3px;
+    border-radius: 2px;
+    width: 12px;
+    height: 12px;
+    background-color: #46e055;
+  }
+}
+.option-text {
+  font-weight: 400;
+  font-size: 16px;
+}

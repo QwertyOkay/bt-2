@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:wght@900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header-container">
+        <nav class="nav-header">
+          <a href="" class="header-link link">principais corridas</a>
+          <ul class="nav-list list">
+            <li class="nav-item">
+              <a
+                href="./contatos.html"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="nav-link link"
+                >Contatos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="./sobre-nós.html"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="nav-link link"
+                >Sobre nós</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="./termos-e-condições.html"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="nav-link link"
+                >Termos e Condições</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="./política-de-privacidade.html"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="nav-link link"
+                >Política de Privacidade</a
+              >
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="header-button js-open-menu"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+          >
+            <svg width="24" height="24" class="header-svg">
+              <use href="./img/mob-menu-defs.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main class="page-content">
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-wrapper">
+            <h1 class="hero-title">
+              Visão geral da plataforma de apostas em corridas de cavalos
+            </h1>
+            <picture>
+              <source
+                srcset="
+                  ./img/mob/hero-img-360.webp    1x,
+                  ./img/mob/hero-img-360@2x.webp 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="
+                  ./img/desc/hero-img-1440.webp    1x,
+                  ./img/desc/hero-img-1440@2x.webp 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <img
+                loading="lazy"
+                src="./img/mob/hero-img-360.webp"
+                alt="Horse racing"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <!-- CARDS SECTION -->
+      <section class="cards section">
+        <div class="container">
+          <ul class="cards-list list">
+            <li class="cards-item">
+              <img
+                src="./img/logo-rating.webp"
+                alt="logo jockey club Brasileiro"
+                class="cards-img"
+                height="51"
+                width="300"
+              />
+              <div class="cards-wrapper">
+                <h3 class="cards-title">Novo bônus</h3>
+                <p class="cards-text">
+                  Verificar Termos e Condições. Jogue de Forma Responsável. 18+
+                </p>
+              </div>
+              <ul class="option-list list">
+                <li class="option-item">
+                  <p class="option-test">Wide selection of sporting events</p>
+                </li>
+                <li class="option-item">
+                  <p class="option-test">Live streaming and results</p>
+                </li>
+                <li class="option-item">
+                  <p class="option-test">Reliability and security</p>
+                </li>
+              </ul>
+              <a href="#" class="cards-btn link">Saber mais</a>
+            </li>
+            <li class="cards-item">
+              <img
+                src="./img/logo-rating1.webp"
+                alt="logo jockey club de sorocaba"
+                class="cards-img"
+                height="51"
+                width="300"
+              />
+              <div class="cards-wrapper">
+                <h3 class="cards-title">Novo bônus</h3>
+                <p class="cards-text">
+                  Verificar Termos e Condições. Jogue de Forma Responsável. 18+
+                </p>
+              </div>
+              <ul class="option-list list">
+                <li class="option-item">
+                  <p class="option-test">Wide selection of sporting events</p>
+                </li>
+                <li class="option-item">
+                  <p class="option-test">Live streaming and results</p>
+                </li>
+                <li class="option-item">
+                  <p class="option-test">Reliability and security</p>
+                </li>
+              </ul>
+              <a href="#" class="cards-btn link">Saber mais</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- NEWS SECTION -->
+      <section class="news section">
+        <div class="container">
+          <ul class="news-list list">
+            <li class="news-item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/mob/news-img-360.webp    1x,
+                    ./img/mob/news-img-360@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/desc/news-img-1440.webp    1x,
+                    ./img/desc/news-img-1440@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  loading="lazy"
+                  src="./img/mob/news-img-360.webp"
+                  alt="Horse racing"
+                />
+              </picture>
+              <div>
+                <h3 class="news-title">Avaliações e recomendações</h3>
+                <p class="news-desc">
+                  A visão geral da plataforma CasaDeApostaBet fornece aos
+                  usuários informações abrangentes sobre eventos no mundo das
+                  corridas de cavalos, incluindo horários de corridas,
+                  estatísticas dos cavalos e seus desempenhos anteriores,
+                  ajudando os apostadores a tomar decisões informadas.
+                </p>
+              </div>
+            </li>
+            <li class="news-item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/mob/news-img2-360.webp    1x,
+                    ./img/mob/news-img2-360@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/desc/news-img2-1440.webp    1x,
+                    ./img/desc/news-img2-1440@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  loading="lazy"
+                  src="./img/mob/news-img2-360.webp"
+                  alt="Horse racing"
+                />
+              </picture>
+              <div>
+                <h3 class="news-title">Previsões e análises</h3>
+                <p class="news-desc">
+                  a plataforma oferece previsões e análises de qualidade sobre
+                  as próximas corridas com base em estatísticas e análises de
+                  especialistas, ajudando os usuários a aumentar suas chances de
+                  sucesso nas apostas.
+                </p>
+              </div>
+            </li>
+            <li class="news-item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/mob/news-img3-360.webp    1x,
+                    ./img/mob/news-img3-360@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/desc/news-img3-1440.webp    1x,
+                    ./img/desc/news-img3-1440@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  loading="lazy"
+                  src="./img/mob/news-img3-360.webp"
+                  alt="Horse racing"
+                />
+              </picture>
+              <div>
+                <h3 class="news-title">Previsões e análises</h3>
+                <p class="news-desc">
+                  a plataforma oferece previsões e análises de qualidade sobre
+                  as próximas corridas com base em estatísticas e análises de
+                  especialistas, ajudando os usuários a aumentar suas chances de
+                  sucesso nas apostas.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer section">
+      <div class="container footer-container">
+        <ul class="sponsors-list list">
+          <li class="sponsors-item">
+            <a
+              href="https://www.gamcare.org.uk/"
+              class="sponsors-link link"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><img
+                src="./img/game-care.webp"
+                alt="logo game care"
+                width="120"
+                height="37"
+            /></a>
+          </li>
+          <li class="sponsors-item">
+            <a
+              href="https://www.gambleaware.org/"
+              class="sponsors-link link"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><img src="./img/be-gamble-aware.webp" alt="logo Be Gamble Aware"
+            /></a>
+          </li>
+          <li class="sponsors-item">
+            <a
+              href="https://ibjr.org/jogo-responsavel/boas-praticas-jogadores/"
+              class="sponsors-link link"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><img
+                src="./img/ibjr.webp"
+                alt="logo Institutio Brasileiro de Jogo Responsável"
+            /></a>
+          </li>
+          <li class="sponsors-item">
+            <a
+              href="https://www.gov.br/fazenda/pt-br/assuntos/noticias/2024/maio/fazenda-edita-portaria-com-o-regramento-tecnico-dos-sistemas-de-jogos-on-line"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="sponsors-link link"
+              ><img src="./img/gov.br.webp" alt="logo gov.br"
+            /></a>
+          </li>
+        </ul>
+        <div class="footer-thumb">
+          <p class="footer-thumb-text">+18</p>
+        </div>
+        <div class="footer-wrapper">
+          <nav class="footer-nav">
+            <p class="footer-nav-text">Navegação</p>
+            <ul class="footer-nav-list list">
+              <li>
+                <a
+                  href="./contatos.html"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="footer-nav-link link"
+                  >Contatos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./sobre-nós.html"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="footer-nav-link link"
+                  >Sobre nós</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./termos-e-condições.html"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="footer-nav-link link"
+                  >Termos e Condições</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./política-de-privacidade.html"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="footer-nav-link link"
+                  >Política de Privacidade</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="privacy-policy-wrapper">
+            <p class="privacy-policy-text">principais corridas</p>
+            <p class="privacy-policy-desc">
+              © 2024 Principais corridas.com | Todos os direitos reservados
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <div class="mobile-menu-wrapper">
+        <a href="" class="header-link link">principais corridas</a>
+        <button class="mobile-menu-btn js-close-menu" type="button">
+          <svg width="24" height="24">
+            <use href="./img/mob-menu-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <nav class="footer-nav">
+        <p class="footer-nav-text">Navegação</p>
+        <ul class="footer-nav-list list">
+          <li>
+            <a
+              href="./contatos.html"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="footer-nav-link link"
+              >Contatos</a
+            >
+          </li>
+          <li>
+            <a
+              href="./sobre-nós.html"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="footer-nav-link link"
+              >Sobre nós</a
+            >
+          </li>
+          <li>
+            <a
+              href="./termos-e-condições.html"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="footer-nav-link link"
+              >Termos e Condições</a
+            >
+          </li>
+          <li>
+            <a
+              href="./política-de-privacidade.html"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="footer-nav-link link"
+              >Política de Privacidade</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
